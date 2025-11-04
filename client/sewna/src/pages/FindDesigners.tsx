@@ -4,6 +4,7 @@ import { ChatInput } from "../components/ChatInput";
 import { DesignerCard } from "../components/DesignerCard";
 import { useToast } from "../hooks/use-toast";
 import { Loader2, Sparkles } from "lucide-react";
+import { HTTP_URL } from "../utils";
 
 interface Designer {
   id: string;
@@ -37,7 +38,7 @@ const FindDesigners = () => {
     setHasSearched(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/match', {
+      const response = await fetch(`${HTTP_URL}/api/match`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
