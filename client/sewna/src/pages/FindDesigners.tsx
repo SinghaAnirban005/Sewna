@@ -84,9 +84,9 @@ const FindDesigners = () => {
       
       <main className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="text-center mb-12 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-4" style={{color:"#00b67f"}}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-4" style={{color:"#00b67f", backgroundColor: '#f0f8ff'}}>
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium" style={{ backgroundColor: '', color: '#00b67f'}}>AI-Powered Designer Matching</span>
+            <span className="text-sm font-medium" style={{ backgroundColor: '#f0f8ff', color: '#00b67f'}}>AI-Powered Designer Matching</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Find Your Perfect Designer
