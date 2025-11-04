@@ -33,6 +33,7 @@ export const ChatInput = ({ message, setMessage, onSubmit, isLoading, placeholde
         size="icon"
         disabled={isLoading || !message.trim()}
         className="absolute bottom-4 right-4 rounded-full bg-accent hover:bg-accent/90 text-accent-foreground"
+        style={{ backgroundColor: '#00b67f', color: '#fff' }}
       >
         <Send className="w-4 h-4" />
       </Button>

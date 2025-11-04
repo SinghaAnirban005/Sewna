@@ -11,6 +11,7 @@ export const Header = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="text-accent"
+              style={{ color: '#00b67f' }}
             >
               <path
                 d="M16 4L4 10V22L16 28L28 22V10L16 4Z"
@@ -26,7 +27,7 @@ export const Header = () => {
               />
               <circle cx="16" cy="16" r="4" fill="currentColor" />
             </svg>
-            <span className="text-2xl font-bold tracking-tight text-accent">SEWNA</span>
+            <span className="text-2xl font-bold tracking-tight text-accent" style={{ color: '#00b67f' }}>SEWNA</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">

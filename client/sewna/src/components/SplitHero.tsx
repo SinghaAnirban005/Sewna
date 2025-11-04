@@ -63,9 +63,10 @@ const Side = ({ title, description, buttonText, backgroundImage, position, isDar
               size="lg"
               className={`group/btn text-lg px-8 py-6 rounded-full transition-all duration-300 ${
                 isDark
-                  ? "bg-accent hover:bg-accent/90 text-accent-foreground hover:shadow-[0_0_30px_rgba(0,182,127,0.4)]"
+                  ? "bg-accent hover:bg-accent/90 text-white hover:shadow-[0_0_30px_rgba(0,182,127,0.4)]"
                   : "bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-[0_0_30px_rgba(0,0,0,0.2)]"
               }`}
+              style={isDark ? { backgroundColor: '#00b67f', color: '#fff' } : {}}
               onClick={handleClick}
             >
               {buttonText}
