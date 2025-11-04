@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectDatabase } from './config/database';
-import designerRoutes from './routes/designerRoutes';
-import { DesignerService } from './services/designerService';
+import { connectDatabase } from './config/db.js';
+import designerRoutes from './routes/designerRoutes.js';
+import { DesignerService } from './services/designerService.js';
 import mongoose from 'mongoose';
 
 dotenv.config();
@@ -47,5 +47,4 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-// Start the application
 initializeApp();
