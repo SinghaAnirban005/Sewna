@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from"./ui/button";
 import designerHero from "../assets/img2.png";
 import clientHero from "../assets/img1.png"
+import { useNavigate } from "react-router-dom";
 
 interface SideProps {
   title: string;
@@ -10,9 +11,10 @@ interface SideProps {
   backgroundImage: string;
   position: "left" | "right";
   isDark?: boolean;
+  handleClick?: () => void
 }
 
-const Side = ({ title, description, buttonText, backgroundImage, position, isDark }: SideProps) => {
+const Side = ({ title, description, buttonText, backgroundImage, position, isDark, handleClick }: SideProps) => {
   const animationClass = position === "left" ? "animate-slide-in-left" : "animate-slide-in-right";
 
   return (
@@ -64,6 +66,7 @@ const Side = ({ title, description, buttonText, backgroundImage, position, isDar
                   ? "bg-accent hover:bg-accent/90 text-accent-foreground hover:shadow-[0_0_30px_rgba(0,182,127,0.4)]"
                   : "bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-[0_0_30px_rgba(0,0,0,0.2)]"
               }`}
+              onClick={handleClick}
             >
               {buttonText}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
@@ -82,6 +85,7 @@ const Side = ({ title, description, buttonText, backgroundImage, position, isDar
 };
 
 export const SplitHero = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex flex-col lg:flex-row min-h-screen">
       <Side
@@ -99,6 +103,7 @@ export const SplitHero = () => {
         backgroundImage={clientHero}
         position="right"
         isDark={false}
+        handleClick={() => navigate('/find-designers')}
       />
     </div>
   );

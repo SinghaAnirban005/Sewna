@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/config/db.ts","./src/models/Designer.ts","./src/routes/designerRoutes.ts","./src/services/designerService.ts","./src/services/embeddingService.ts","./src/types/index.ts"],"version":"5.9.3"}
