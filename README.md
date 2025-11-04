@@ -2,6 +2,10 @@
 
 [Sewna Demo.webm](https://github.com/user-attachments/assets/194cccf4-ca12-4cb6-ae5e-0c05e8df1b28)
 
+# Designer Match Architecture
+
+<img width="1104" height="635" alt="image" src="https://github.com/user-attachments/assets/9879d16d-3ec4-4a6b-99df-e029026d7fd6" />
+
 # Project Setup Guide
 
 ## Prerequisites
